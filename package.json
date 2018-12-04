@@ -31,8 +31,12 @@
     "zone.js": "0.8.26"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.5.0",
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "config": {
+    "ionic_copy": "./copy.config.js"
+  }
 }
