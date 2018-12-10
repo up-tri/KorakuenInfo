@@ -1,3 +1,60 @@
 page-home {
+  .content {
+    position: relative;
+    background-image: url('/assets/imgs/tokyo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
+    &__back-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    &__main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+  }
+
+  .flex-main {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+      flex-grow: 1;
+    }
+
+    &__info {
+      flex-grow: 1;
+    }
+
+    &__buttons {
+      flex-grow: 4;
+    }
+
+    &__footer {
+      flex-grow: 1;
+    }
+  }
+
+  .info-panel {
+    background-color: #333333;
+
+    &__title {
+      background-color: #207bc5;
+      padding: 3px;
+      font-size: 2rem;
+      color: white;
+    }
+  }
 }

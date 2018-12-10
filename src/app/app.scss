@@ -14,7 +14,24 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-.marquee {
-    overflow:-webkit-marquee;
-    white-space:nowrap;
+.marquee p {
+  margin: 0;
+  padding-left: 600px;
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate(0%);
+  }
+
+  99%,
+  to {
+    transform: translate(-100%);
+  }
 }
